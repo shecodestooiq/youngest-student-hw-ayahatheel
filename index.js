@@ -7,13 +7,13 @@ var students = [
 
 function showYoungestStudent(students) {
     if (students.length === 0) {
-        console.log("can't find the youngest students");
+        console.log("No students provided.");
         return;
     }
 
     var youngestAge = Math.min(...students.map(student => student.age));
     var youngestStudent = students.find(student => student.age === youngestAge);
-    console.log("The youngest student is: " + youngestStudent.name);
+    console.log(youngestStudent.name);
 }
 
 showYoungestStudent(students);
