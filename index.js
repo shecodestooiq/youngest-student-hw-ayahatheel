@@ -1,15 +1,14 @@
 
 var students = [
-    { name: "Ayah", age: 26 },
-    { name: "Noor", age: 21 },
-    { name: "Sarah", age: 30 },
-    { name: "Mais", age: 24 }
+    { name: 'Alice', age: 25 },
+    { name: 'Bob', age: 2 },
+    { name: 'Charlie', age: 21 },
 ];
 
 function showYoungestStudent(students) {
     var youngestAge = Math.min(...students.map(student => student.age));
     var youngestStudent = students.find(student => student.age === youngestAge);
-    console.log("The youngest student is: " + youngestStudent.name);
+    console.log("The youngest student is:" + youngestStudent.name);
 }
 
 showYoungestStudent(students);
