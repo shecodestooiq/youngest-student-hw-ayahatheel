@@ -7,7 +7,7 @@ var students = [
 
 function showYoungestStudent(students) {
     if (students.length === 0) {
-        console.log("There are no students.");
+        console.log("can't find the youngest students");
         return;
     }
 
